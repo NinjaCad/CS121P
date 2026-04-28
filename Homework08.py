@@ -1,12 +1,12 @@
 print('Reading input file "classes.txt"...')
 try:
-    text = open("/Users/caedmonjulian/Library/CloudStorage/GoogleDrive-caedmon.julian@gmail.com/My Drive/Caedmon/School/Master's University/CS121P Introduction to Programming/Test/classes.txt", "r")
+    text = open("./classes.txt", "r")
 except FileNotFoundError:
     print("Error: classes.txt does not exist or it can't be opened for input.")
     print("Program exiting now...")
 
 students = {}
-with open("/Users/caedmonjulian/Library/CloudStorage/GoogleDrive-caedmon.julian@gmail.com/My Drive/Caedmon/School/Master's University/CS121P Introduction to Programming/Test/classes.txt", "r") as infile:
+with open("./classes.txt", "r") as infile:
     current_class = None
     for line in infile:
         line = line.strip()
@@ -24,12 +24,12 @@ print("Input processed")
 
 print('Writing output file "students.txt"...')
 try:
-    text = open("/Users/caedmonjulian/Library/CloudStorage/GoogleDrive-caedmon.julian@gmail.com/My Drive/Caedmon/School/Master's University/CS121P Introduction to Programming/Test/students.txt", "w")
+    text = open("./students.txt", "w")
 except FileNotFoundError:
     print("Error: classes.txt can't be opened for output.")
     print("Program exiting now...")
 
-with open("/Users/caedmonjulian/Library/CloudStorage/GoogleDrive-caedmon.julian@gmail.com/My Drive/Caedmon/School/Master's University/CS121P Introduction to Programming/Test/students.txt" , "w") as outfile:
+with open("./students.txt" , "w") as outfile:
     for student in sorted(students):
         classes_list = " ".join(sorted(students[student]))
         outfile.write(str(student) + ": " + classes_list + "\n")
