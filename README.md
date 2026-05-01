@@ -1,6 +1,7 @@
-# CS121P Portfolio (Fall 2025)
+# Basic Python Projects
 
-A small portfolio of **TMU CS121P** homework assignments written in **Python**.
+### Overview
+This repo is organized as one script per python homework assignment (`Homework00.py` … `Homework09.py`) for CS121P at TMU in FA25. Each script demonstrates a specific concept covered in an introductory programming course (console I/O, math, loops, file I/O, basic classes/operator overloading, and turtle graphics).
 
 ## How to run
 Most files are standalone scripts.
@@ -33,6 +34,3 @@ Notes:
 
 ### Other
 - **`CS121P Homework Assignments.pdf`** — Assignment handout/reference document.
-
-## Overview
-This repo is organized as one script per homework assignment (`Homework00.py` … `Homework09.py`). Each script demonstrates a specific concept covered in an introductory programming course (console I/O, math, loops, file I/O, basic classes/operator overloading, and turtle graphics).
